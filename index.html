@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comida Consciente</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -21,14 +24,20 @@
             <a href="#contacto">Contacto</a>
         </nav>
     </header>
-
     <section class="hero">
-        <div class="hero-text">
-            <h1>Comida hecha con harina artesanal</h1>
-            <p>Productos sanos, hechos con harina molida de forma tradicional, sin químicos ni procesos industriales.</p>
-            <a class="btn" href="#catalogo">Ver catálogo</a>
-        </div>
+    <div class="hero-carousel">
+        <img src="img/pan1.jpg" alt="Pan artesanal">
+        <img src="img/galletas1.jpg" alt="Galletas">
+        <img src="img/harina1.jpg" alt="Harina artesanal">
+    </div>
+
+    <div class="hero-text">
+        <h1>Comida hecha con harina artesanal</h1>
+        <p>Productos sanos, hechos con harina molida de forma tradicional, sin químicos ni procesos industriales.</p>
+        <button type="button" href="" class="btn btn-light">hola</button>
+    </div>
     </section>
+
 
     <section id="catalogo" class="catalogo">
         <h2>Nuestros Productos</h2>
@@ -48,7 +57,7 @@
                 <span class="precio">$1.800</span>
             </div>
 
-            <div class="">
+            <div class="card">
                 <img src="" alt="">
                 <h3>Pastas Integrales</h3>
                 <p>Elaboradas con trigo tradicional sin químicos.</p>
