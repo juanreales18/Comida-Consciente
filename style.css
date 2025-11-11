@@ -6,16 +6,16 @@
 }
 
 body {
-    background: #faf7f2;
+    background-color: #fffbe0;
     color: #333;
 }
 
 header {
+    background-color: #1ca955;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    background: #fff;
     border-bottom: 2px solid #eaeaea;
     position: sticky;
     top: 0;
@@ -32,14 +32,8 @@ header {
 }
 
 .logo-img {
-    height: 45px; 
+    height: 44px; 
     width: auto;
-}
-
-.logo-text {
-    height: 35px;
-    width: auto;
-
 }
 
 header .logo {
@@ -51,12 +45,12 @@ header .logo {
 nav a {
     margin-left: 20px;
     text-decoration: none;
-    color: #6b4f31;
+    color: #fff4a3;
     font-weight: 600;
 }
 
 nav a:hover {
-    color: #3d2b17;
+    color: #6b4f31;
 }
 
 
