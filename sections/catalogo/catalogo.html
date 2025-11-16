@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida Consciente</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="catalogo.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../../Imagenes/LOGO/ICONO.png" alt="logo" class="logo-img">
+            <img src="../../Imagenes/LOGO/LETRAS.png" alt="LETRAS" class="logo-text">
+        </div>
+        <nav>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#proceso">Proceso</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+
+
+    <section id="catalogo" class="catalogo">
+    <h2>Nuestros Productos</h2>
+
+    <div class="buscador-contenedor">
+        <span class="icono">🔍</span>
+        <input 
+            type="text" 
+            id="buscador" 
+            placeholder="Buscar productos..."
+            class="buscador-input">
+    </div>
+
+    <p id="mensaje-no-resultados" style="display:none; margin-top: 20px; font-size: 1.2rem; text-align:center;">
+        ❌ No se encontraron productos
+    </p>
+
+    <div class="grid">
+
+        <!-- Producto -->
+        <div class="card producto">
+        <img src="./imagenes/pan_artesanal.jpg" alt="Pan Artesanal">
+        <h3>Pan Artesanal</h3>
+        <p>Hecho con harina casera molida a piedra.</p>
+        <span class="precio" data-precio="2500">$2.500</span>
+
+        <label>
+            <input type="checkbox" class="seleccionar"> Agregar al pedido
+        </label>
+
+        <div class="opciones" style="display: none;">
+            <label>Cantidad:
+            <input type="number" class="cantidad" value="1" min="1">
+            </label>
+            <label>Detalles:
+            <input type="text" class="detalle" placeholder="Ej: sin sal, sin gluten...">
+            </label>
+        </div>
+        </div>
+
+        <div class="card producto">
+        <img src="./imagenes/pan_integral_con_semillas.jpg" alt="Pan Artesanal">
+        <h3>Pan integral con semillas</h3>
+        <p>Rico en fibra, con lino, chía y girasol.</p>
+        <span class="precio" data-precio="2500">$2.500</span>
+
+        <label>
+            <input type="checkbox" class="seleccionar"> Agregar al pedido
+        </label>
+
+        <div class="opciones" style="display: none;">
+            <label>Cantidad:
+            <input type="number" class="cantidad" value="1" min="1">
+            </label>
+            <label>Detalles:
+            <input type="text" class="detalle" placeholder="Ej: sin sal, sin gluten...">
+            </label>
+        </div>
+        </div>  
+        
+        <div class="card producto">
+        <img src="./imagenes/pan_de_centeno_artesanal.jpeg" alt="Pan Artesanal">
+        <h3>Pan de centeno artesanal</h3>
+        <p>Fermentado naturalmente, sin aditivos.</p>
+        <span class="precio" data-precio="2500">$2.500</span>
+
+        <label>
+            <input type="checkbox" class="seleccionar"> Agregar al pedido
+        </label>
+
+        <div class="opciones" style="display: none;">
+            <label>Cantidad:
+            <input type="number" class="cantidad" value="1" min="1">
+            </label>
+            <label>Detalles:
+            <input type="text" class="detalle" placeholder="Ej: sin sal, sin gluten...">
+            </label>
+        </div>
+        </div>
+
+        <div class="card producto">
+        <img src="./imagenes/pan_sin_gluten.jpg" alt="Pan Artesanal">
+        <h3>Pan sin gluten</h3>
+        <p>Hecho con harinas alternativas y aceite de oliva.</p>
+        <span class="precio" data-precio="2500">$2.500</span>
+
+        <label>
+            <input type="checkbox" class="seleccionar"> Agregar al pedido
+        </label>
+
+        <div class="opciones" style="display: none;">
+            <label>Cantidad:
+            <input type="number" class="cantidad" value="1" min="1">
+            </label>
+            <label>Detalles:
+            <input type="text" class="detalle" placeholder="Ej: sin sal, sin gluten...">
+            </label>
+        </div>
+        </div>
+
+        <div class="card producto">
+        <img src="./imagenes/galletitas_de_avena_y_miel.jpg" alt="Pan Artesanal">
+        <h3>Galletitas de avena y miel</h3>
+        <p>Endulzadas naturalmente, ideales para el mate.</p>
+        <span class="precio" data-precio="2500">$2.500</span>
+
+        <label>
+            <input type="checkbox" class="seleccionar"> Agregar al pedido
+        </label>
+
+        <div class="opciones" style="display: none;">
+            <label>Cantidad:
+            <input type="number" class="cantidad" value="1" min="1">
+            </label>
+            <label>Detalles:
+            <input type="text" class="detalle" placeholder="Ej: sin sal, sin gluten...">
+            </label>
+        </div>
+        </div>
+
+        <div class="card producto">
+        <img src="./imagenes/galletas_de_salvado_y_lino.jpg" alt="Pan Artesanal">
+        <h3>Galletas de salvado y lino</h3>
+        <p>Crocantes, bajas en grasa.</p>
+        <span class="precio" data-precio="2500">$2.500</span>
+
+        <label>
+            <input type="checkbox" class="seleccionar"> Agregar al pedido
+        </label>
+
+        <div class="opciones" style="display: none;">
+            <label>Cantidad:
+            <input type="number" class="cantidad" value="1" min="1">
+            </label>
+            <label>Detalles:
+            <input type="text" class="detalle" placeholder="Ej: sin sal, sin gluten...">
+            </label>
+        </div>
+        </div>
+        
+        <div class="card producto">
+        <img src="./imagenes/tortillas_caseras.jpg" alt="Tortillas Caseras">
+        <h3>Tortillas Caseras</h3>
+        <p>Sin conservantes, masa suave y natural.</p>
+        <span class="precio" data-precio="1800">$1.800</span>
+
+        <label>
+            <input type="checkbox" class="seleccionar"> Agregar al pedido
+        </label>
+
+        <div class="opciones" style="display: none;">
+            <label>Cantidad:
+            <input type="number" class="cantidad" value="1" min="1">
+            </label>
+            <label>Detalles:
+            <input type="text" class="detalle" placeholder="Ej: más doradas, sin grasa...">
+            </label>
+        </div>
+        </div>
+
+        <div class="card producto">
+        <img src="./imagenes/ñoquis_de_espinaca.jpeg" alt="Ñoquis de espinaca">
+        <h3>Ñoquis de espinaca</h3>
+        <p>Suaves y naturales, listos para cocinar.</p>
+        <span class="precio" data-precio="3200">$3.200</span>
+        <label><input type="checkbox" class="seleccionar"> Agregar al pedido</label>
+        <div class="opciones" style="display: none;">
+            <label>Cantidad:<input type="number" class="cantidad" value="1" min="1"></label>
+            <label>Detalles:<input type="text" class="detalle" placeholder="Ej: con salsa o sin..."></label>
+        </div>
+        </div>
+
+        <div class="card producto">
+        <img src="./imagenes/tallarines_integrales.jpg" alt="Tallarines integrales">
+        <h3>Tallarines integrales</h3>
+        <p>Elaborados con harina integral 100% natural.</p>
+        <span class="precio" data-precio="2800">$2.800</span>
+        <label><input type="checkbox" class="seleccionar"> Agregar al pedido</label>
+        <div class="opciones" style="display: none;">
+            <label>Cantidad:<input type="number" class="cantidad" value="1" min="1"></label>
+            <label>Detalles:<input type="text" class="detalle" placeholder="Ej: porción doble..."></label>
+        </div>
+        </div>
+
+        <div class="card producto">
+        <img src="./imagenes/pastas_de_lentejas_rojas.jpeg" alt="Pasta de lentejas rojas">
+        <h3>Pasta de lentejas rojas</h3>
+        <p>Fuente de proteína vegetal, sin gluten.</p>
+        <span class="precio" data-precio="3500">$3.500</span>
+        <label><input type="checkbox" class="seleccionar"> Agregar al pedido</label>
+        <div class="opciones" style="display: none;">
+            <label>Cantidad:<input type="number" class="cantidad" value="1" min="1"></label>
+            <label>Detalles:<input type="text" class="detalle" placeholder="Ej: sin condimentos..."></label>
+        </div>
+        </div>
+
+        <div class="card producto">
+        <img src="./imagenes/hummus_de_garbanzo.jpg" alt="Hummus de garbanzos 500g">
+        <h3>Hummus de garbanzos 500g</h3>
+        <p>Con aceite de oliva y jugo de limón natural.</p>
+        <span class="precio" data-precio="2500">$2.500</span>
+        <label><input type="checkbox" class="seleccionar"> Agregar al pedido</label>
+        <div class="opciones" style="display: none;">
+            <label>Cantidad:<input type="number" class="cantidad" value="1" min="1"></label>
+            <label>Detalles:<input type="text" class="detalle" placeholder="Ej: extra oliva..."></label>
+        </div>
+        </div>
+
+        <div class="card producto">
+        <img src="./imagenes/hummus_de_remolacha.jpg" alt="Hummus de remolacha 500g">
+        <h3>Hummus de remolacha 500g</h3>
+        <p>Colorido, sabroso y lleno de antioxidantes.</p>
+        <span class="precio" data-precio="2700">$2.700</span>
+        <label><input type="checkbox" class="seleccionar"> Agregar al pedido</label>
+        <div class="opciones" style="display: none;">
+            <label>Cantidad:<input type="number" class="cantidad" value="1" min="1"></label>
+            <label>Detalles:<input type="text" class="detalle" placeholder="Ej: sin ajo..."></label>
+        </div>
+        </div>
+
+        <div class="card producto">
+        <img src="./imagenes/pasta_de_berenjenas.png" alt="Pasta de berenjena">
+        <h3>Pasta de berenjena</h3>
+        <p>Asada, cremosa y con un toque de limón.</p>
+        <span class="precio" data-precio="2600">$2.600</span>
+        <label><input type="checkbox" class="seleccionar"> Agregar al pedido</label>
+        <div class="opciones" style="display: none;">
+            <label>Cantidad:<input type="number" class="cantidad" value="1" min="1"></label>
+            <label>Detalles:<input type="text" class="detalle" placeholder="Ej: con picante..."></label>
+        </div>
+        </div>
+
+        <div class="card producto">
+        <img src="./imagenes/pasta_de_mani.jpg" alt="Pasta de maní 250g">
+        <h3>Pasta de maní 250g</h3>
+        <p>100% maní tostado, sin azúcar ni conservantes.</p>
+        <span class="precio" data-precio="2200">$2.200</span>
+        <label><input type="checkbox" class="seleccionar"> Agregar al pedido</label>
+        <div class="opciones" style="display: none;">
+            <label>Cantidad:<input type="number" class="cantidad" value="1" min="1"></label>
+            <label>Detalles:<input type="text" class="detalle" placeholder="Ej: crocante o cremosa..."></label>
+        </div>
+        </div>
+
+        <div class="card producto">
+        <img src="./imagenes/ensalada_de_quinoa.jpg" alt="Ensalada de quinoa con verduras">
+        <h3>Ensalada de quinoa con verduras</h3>
+        <p>Fresca, lista para servir y llena de nutrientes.</p>
+        <span class="precio" data-precio="4200">$4.200</span>
+        <label><input type="checkbox" class="seleccionar"> Agregar al pedido</label>
+        <div class="opciones" style="display: none;">
+            <label>Cantidad:<input type="number" class="cantidad" value="1" min="1"></label>
+            <label>Detalles:<input type="text" class="detalle" placeholder="Ej: sin cebolla..."></label>
+        </div>
+        </div>
+
+        <div class="card producto">
+        <img src="./imagenes/mix_de_frutos_secos_y_semillas.jpg" alt="Mix de legumbres cocidas 500g">
+        <h3>Mix de legumbres cocidas 500g</h3>
+        <p>Ideal para guisos, ensaladas o wraps.</p>
+        <span class="precio" data-precio="3100">$3.100</span>
+        <label><input type="checkbox" class="seleccionar"> Agregar al pedido</label>
+        <div class="opciones" style="display: none;">
+            <label>Cantidad:<input type="number" class="cantidad" value="1" min="1"></label>
+            <label>Detalles:<input type="text" class="detalle" placeholder="Ej: sin porotos..."></label>
+        </div>
+        </div>
+
+        <div class="card producto">
+        <img src="./imagenes/hamburguesas_de_lentejas.jpg" alt="Hamburguesas de lentejas">
+        <h3>Hamburguesas de lentejas</h3>
+        <p>Congeladas, listas para cocinar y sin conservantes.</p>
+        <span class="precio" data-precio="3600">$3.600</span>
+        <label><input type="checkbox" class="seleccionar"> Agregar al pedido</label>
+        <div class="opciones" style="display: none;">
+            <label>Cantidad:<input type="number" class="cantidad" value="1" min="1"></label>
+            <label>Detalles:<input type="text" class="detalle" placeholder="Ej: con avena o sin..."></label>
+        </div>
+        </div>
+
+        <div class="card producto">
+        <img src="./imagenes/medallones_de_garbanzos_y_zanahoria.jpg" alt="Medallones de garbanzos y zanahoria">
+        <h3>Medallones de garbanzos y zanahoria</h3>
+        <p>Ricos, livianos y llenos de sabor natural.</p>
+        <span class="precio" data-precio="3400">$3.400</span>
+        <label><input type="checkbox" class="seleccionar"> Agregar al pedido</label>
+        <div class="opciones" style="display: none;">
+            <label>Cantidad:<input type="number" class="cantidad" value="1" min="1"></label>
+            <label>Detalles:<input type="text" class="detalle" placeholder="Ej: extra especias..."></label>
+        </div>
+        </div>
+
+        <div class="card producto">
+        <img src="./imagenes/barritas_de_avena_y_frutos_secos.jpg" alt="Barritas de avena y frutos secos">
+        <h3>Barritas de avena y frutos secos</h3>
+        <p>Energía natural para todo el día, sin azúcares añadidos.</p>
+        <span class="precio" data-precio="1800">$1.800</span>
+        <label><input type="checkbox" class="seleccionar"> Agregar al pedido</label>
+        <div class="opciones" style="display: none;">
+            <label>Cantidad:<input type="number" class="cantidad" value="1" min="1"></label>
+            <label>Detalles:<input type="text" class="detalle" placeholder="Ej: con miel o sin..."></label>
+        </div>
+        </div>
+
+        <div class="card producto">
+        <img src="./imagenes/mix_de_frutos_secos_y_semillas.jpg" alt="Mix de frutos secos y semillas 200g">
+        <h3>Mix de frutos secos y semillas 200g</h3>
+        <p>Natural, sin sal ni conservantes, ideal para colaciones.</p>
+        <span class="precio" data-precio="2500">$2.500</span>
+        <label><input type="checkbox" class="seleccionar"> Agregar al pedido</label>
+        <div class="opciones" style="display: none;">
+            <label>Cantidad:<input type="number" class="cantidad" value="1" min="1"></label>
+            <label>Detalles:<input type="text" class="detalle" placeholder="Ej: sin pasas..."></label>
+        </div>
+        </div>
+
+        <div class="card producto">
+        <img src="./imagenes/cookies_integrales_con_chips_de_cacao.jpg" alt="Cookies integrales con chips de cacao">
+        <h3>Cookies integrales con chips de cacao</h3>
+        <p>Dulzura natural, hechas con harina integral y mascabo.</p>
+        <span class="precio" data-precio="2800">$2.800</span>
+        <label><input type="checkbox" class="seleccionar"> Agregar al pedido</label>
+        <div class="opciones" style="display: none;">
+            <label>Cantidad:<input type="number" class="cantidad" value="1" min="1"></label>
+            <label>Detalles:<input type="text" class="detalle" placeholder="Ej: con nuez..."></label>
+        </div>
+        </div>
+
+        <div class="card producto">
+        <img src="./imagenes/budin_de_banana.jpg" alt="Budín de banana integral">
+        <h3>Budín de banana integral</h3>
+        <p>Hecho con harina de avena, sin manteca ni azúcar refinada.</p>
+        <span class="precio" data-precio="3000">$3.000</span>
+        <label><input type="checkbox" class="seleccionar"> Agregar al pedido</label>
+        <div class="opciones" style="display: none;">
+            <label>Cantidad:<input type="number" class="cantidad" value="1" min="1"></label>
+            <label>Detalles:<input type="text" class="detalle" placeholder="Ej: con nueces..."></label>
+        </div>
+        </div>
+
+
+    </div>
+
+    <div class="pedido-final">
+        <button class="btn btn-success" id="btn-whatsapp">Enviar pedido por WhatsApp</button>
+    </div>
+    </section>
+
+
+
+    <footer>
+        <p>© 2025 Comida Consciente · Todos los derechos reservados</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="catalogo.js"></script>
+</body>
+
+</html>
