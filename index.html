@@ -6,29 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comida Consciente</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <div class="logo-img">
-                <img src="Imagenes/LOGO/LOGO HORIZONTAL ALTERNATIVO.png" alt="logo" class="logo-img">
-            </div>
-        <nav>
-            <a href="#catalogo">Catálogo</a>
-            <a href="#proceso">Proceso</a>
-            <a href="#nosotros">Nosotros</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </header>
+    <a href="#" class="logo">
+        <div class="logo-img">
+            <img src="Imagenes/LOGO/LOGO HORIZONTAL ALTERNATIVO.png" alt="logo" class="logo-img">
+        </div>
+    </a>
+
+    <nav>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+
+        <button id="btn-dark">
+            <img id="icono-modo" src="Imagenes/Iconos/modo-nocturno.png" alt="sol" width="40">
+        </button>
+    </nav>
+</header>
 
     <section class="hero">
-        <div class="hero-text">
-            <h1>Comida hecha con harina artesanal</h1>
-            <p>Productos sanos, hechos con harina molida de forma tradicional, sin químicos ni procesos industriales.</p>
-            <a class="btn" href="#catalogo">Ver catálogo</a>
-        </div>
+    <div class="hero-carousel">
+        <img src="Imagenes/Productos/bread-821503_1280.jpg" alt="Pan artesanal">
+        <img src="Imagenes/Productos/galletas.jpg" alt="Galletas">
+        <img src="Imagenes/Productos/harinas-saludables-tipos.jpg" alt="Harina artesanal">
+        <img src="Imagenes/Productos/pan.jpg" alt="Pasta artesanal">
+        <img src="Imagenes/Productos/photo.jpg" alt="Tortillas caseras">
+    </div>
+
+    <!-- <div class="hero-text">
+        <h1>Comida hecha con harina artesanal</h1>
+        <p>Productos sanos, hechos con harina molida de forma tradicional, sin químicos ni procesos industriales.</p>
+        <button type="button" href="" class="btn btn-light">hola</button>
+    </div> -->
     </section>
+
 
     <section id="catalogo" class="catalogo">
         <h2>Nuestros Productos</h2>
@@ -50,7 +67,7 @@
 
             <div class="card">
                 <img src="" alt="">
-                <h3>Pastas Integrales</h3>
+                <h3>Pastas integrales</h3>
                 <p>Elaboradas con trigo tradicional sin químicos.</p>
                 <span class="precio">$3.200</span>
             </div>
@@ -64,33 +81,152 @@
         </div>
     </section>
 
-    <section id="proceso" class="proceso">
-        <h2>Nuestro Proceso</h2>
-        <p>
-            La harina que usamos es molida de manera tradicional en molino, con métodos artesanales que
-            conservan nutrientes, sabor y aroma original del trigo. No agregamos químicos ni mejoradores.
-        </p>
-        <img src="" alt="Molino artesanal">
+    <section id="catalogo" class="catalogo">
+        <h2>Reposteria saludable</h2>
+
+        <div class="grid">
+            <div class="card">
+                <img src="Imagenes/Productos/Productos 2/Banana-Muffin.jpg" alt="">
+                <h3>Muffins de avena y banana</h3>
+                <p>Hecho con harina casera molida a piedra.</p>
+                <span class="precio">$2.500</span>
+            </div>
+
+            <div class="card">
+                <img src="Imagenes/Productos/Productos 2/Budín integral de zanahoria.jpg" alt="">
+                <h3>Budín integral de zanahoria</h3>
+                <p>Sin conservantes, masa suave y natural.</p>
+                <span class="precio">$1.800</span>
+            </div>
+
+            <div class="card">
+                <img src="Imagenes/Productos/Productos 2/galletas-de-avena-y-miel.jpg" alt="">
+                <h3>Galletas de avena y miel</h3>
+                <p>Elaboradas con trigo tradicional sin químicos.</p>
+                <span class="precio">$3.200</span>
+            </div>
+
+            <div class="card">
+                <img src="Imagenes/Productos/Productos 2/brownies.jpeg" alt="">
+                <h3>Brownies con harina de almendras</h3>
+                <p>Dulces, crujientes, sin aditivos artificiales.</p>
+                <span class="precio">$1.500</span>
+            </div>
+
+            <div class="card">
+                <img src="Imagenes/Productos/Productos 2/alfajores_de_maicena_con_harina_integral_75899_orig.jpg" alt="">
+                <h3>Alfajores integrales con dulce sin azúcar</h3>
+                <p>Dulces, crujientes, sin aditivos artificiales.</p>
+                <span class="precio">$1.500</span>
+            </div>
+
+            <div class="card">
+                <img src="Imagenes/Productos/Productos 2/tumblr_mudqtwT2fL1rogx5io2_r2.jpg" alt="">
+                <h3>Tarta de manzana integral</h3>
+                <p>Dulces, crujientes, sin aditivos artificiales.</p>
+                <span class="precio">$1.500</span>
+            </div>
+
+        </div>
     </section>
+
+    <section id="proceso" class="proceso">
+    <h2>Nuestro Proceso</h2>
+
+    <p class="intro">
+        En <strong>Comida Consciente</strong> creemos que lo natural no necesita artificios.
+Desde la selección de los granos hasta el horneado final, todo se hace con respeto y dedicación. Molimos nuestras propias harinas en molino de piedra, conservando su esencia, y elaboramos cada producto a mano, sin químicos ni conservantes.
+Nuestro objetivo es simple: ofrecer alimentos reales, nutritivos y llenos de sabor, elaborados con conciencia y amor por lo que hacemos.
+    </p>
+
+    <div class="proceso-grid">
+
+        <div class="proceso-card">
+            <span class="icon"> <img src="Imagenes/Iconos/ingredientes-naturales.png" alt="" width="100px"></span>
+            <h3>1. Selección de ingredientes</h3>
+            <p>Elegimos granos y cereales de productores locales, asegurando frescura y calidad.</p>
+        </div>
+
+        <div class="proceso-card">
+            <span class="icon"> <img src="Imagenes/Iconos/harina.png" alt="" width="100px"></span>
+            <h3>2. Molienda artesanal</h3>
+            <p>Molimos la harina en molino de piedra para conservar su fibra, aroma y nutrientes.</p>
+        </div>
+
+        <div class="proceso-card">
+            <span class="icon"> <img src="Imagenes/Iconos/elaboracion-de-arcilla.png" alt="" width="100px"> </span>
+            <h3>3. Elaboración consciente</h3>
+            <p>Amasamos a mano y horneamos sin químicos, priorizando nutrición y sabor real.</p>
+        </div>
+
+        <div class="proceso-card">
+            <span class="icon"> <img src="Imagenes/Iconos/reciclaje.png" alt="" width="100px"></span>
+            <h3>4. Empaque ecológico</h3>
+            <p>Usamos envases reciclables y biodegradables para reducir nuestro impacto ambiental.</p>
+        </div>
+
+        <div class="proceso-card">
+            <span class="icon"> <img src="Imagenes/Iconos/apreton-de-manos.png" alt="" width="100px"></span>
+            <h3>5. Compromiso con tu bienestar</h3>
+            <p>Creamos alimentos reales, nutritivos y pensados para cuidar tu salud.</p>
+        </div>
+
+    </div>
+    <div class="proceso-imagenes">
+        <img class="proceso-img" src="/Imagenes/img/Molino_de_sangre.jpg" alt="Molino artesanal">
+        <img class="proceso-img" src="/Imagenes/img/trigo.jpg" alt="trigo">
+    </div>
+    
+</section>
+
 
     <section id="nosotros" class="nosotros">
-        <h2>Sobre Nosotros</h2>
-        <p>
-            Somos un emprendimiento familiar dedicado a elaborar alimentos sanos y naturales.
-            Creemos en la comida real, hecha a mano, con ingredientes simples y de calidad.
-        </p>
-    </section>
+    <h2>Sobre Nosotros</h2>
+    <p>
+        Comida Consciente nació con una idea simple: volver a lo natural. 
+        Somos un emprendimiento familiar que elabora alimentos saludables 
+        usando harinas molidas en molino tradicional, sin químicos, sin conservantes 
+        y respetando siempre los procesos artesanales.
+    </p>
+
+    <p>
+        Nuestro objetivo es ofrecer productos reales, nutritivos y con sabor verdadero. 
+        Seleccionamos granos de productores locales, trabajamos de forma manual y 
+        utilizamos empaques ecológicos para cuidar también el ambiente.
+    </p>
+
+    <p>
+        Creemos en una alimentación más consciente, más humana y más conectada 
+        a lo que la tierra nos da. Cada producto que hacemos está pensado para 
+        tu bienestar y el de tu familia.
+    </p>
+
+</section>
+
 
     <section id="contacto" class="contacto">
-        <h2>Contacto</h2>
-        <p>Hace tu pedido por WhatsApp</p>
-        <a class="btn wsp" href="">📱 Enviar Mensaje</a>
-    </section>
+    <h2>Contacto</h2>
+
+    <form class="formulario">
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo electrónico" required>
+        <textarea placeholder="Tu mensaje..." required></textarea>
+        <button type="submit">Enviar mensaje</button>
+
+        <p class="contacto-whatsapp">
+            📱 También podés escribirnos por WhatsApp:  
+            <a href="https://wa.me/549000000">+54 9 0000 0000</a>
+        </p>
+    </form>
+</section>
 
     <footer>
         <p>© 2025 Comida Consciente · Todos los derechos reservados</p>
     </footer>
 
 </body>
+
+<script src="script.js">
+</script>
 
 </html>
