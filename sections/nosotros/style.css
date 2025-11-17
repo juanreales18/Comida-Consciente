@@ -29,6 +29,86 @@
       line-height:1.5;
     }
 
+    
+header {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 40px;
+    background: #1ca955;
+    gap: 60px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;           
+    z-index: 1000;    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #6b4f31;
+}
+
+.logo :hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+.logo-img {
+    height: 48px;
+    width: auto;
+    border-radius: 6px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background: #6b4f31;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Botón modo oscuro */
+#btn-dark {
+    margin-left: 250%;
+    padding: 8px 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer; 
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+#btn-dark:hover {
+    background: #4d4d4d;
+}
+
+body.dark #btn-dark:hover {
+    background: #1ca955;
+}
+
+
+
+
     .container{
       max-width: var(--max-width);
       margin: 30px auto;
@@ -154,6 +234,72 @@
     .miembro p{ margin:0; font-size:0.95rem; color:#264a34 }
 
     footer.small{ opacity:0.8; font-size:0.9rem; color:#426c4a; margin-top:26px }
+
+    /* footer*/
+
+footer {
+    background: #1ca955;
+    padding: 25px 40px;
+    margin-top: 40px;
+    border-top: 2px solid #eaeaea;
+    color: white;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    height: 100px;
+    width: auto;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-redes img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-redes img:hover {
+    transform: scale(1.15);
+    opacity: 0.85;
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+
+/* footer oscuro*/
+
+body.dark .footer {
+    background: #1f1f1f;
+    border-top: 2px solid #444;
+}
+
+body.dark .footer-logo h3 {
+    color: #76d175;
+}
+
+body.dark .footer-copy {
+    color: #ccc;
+}
+
+body.dark .footer-redes .icono img {
+    filter: brightness(0.85);
+}
 
     @media (max-width:880px){
       .hero{ grid-template-columns: 1fr; }
