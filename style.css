@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Maleha";
+    src: url("../../Imagenes/FUENTES/Principal/Maleha.ttf") format("truetype");
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +13,10 @@
 body {
     background-color: #fffbe0;
     color: #333;
+}
+
+h1, h2, h3 {
+    font-family: "Maleha", sans-serif;
 }
 
 header {
@@ -22,8 +31,6 @@ header {
     top: 0;          
     z-index: 1000;    
 }
-
-
 
 .logo {
     display: flex;

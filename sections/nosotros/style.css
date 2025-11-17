@@ -1,4 +1,3 @@
-  /* Carga local de la tipografía Maleha */
     @font-face {
       font-family: 'Maleha';
       src: url('../../Imagenes/FUENTES/Principal/Maleha.ttf') format('truetype');
@@ -20,6 +19,7 @@
     }
 
     body{
+      transition: background-color 0.4s ease, color 0.4s ease;
       margin:0;
       font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
       color: var(--texto);
@@ -29,6 +29,7 @@
       line-height:1.5;
     }
 
+    
     
 header {
     font-family: "Inter", sans-serif;
@@ -87,28 +88,6 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
-/* Botón modo oscuro */
-#btn-dark {
-    margin-left: 250%;
-    padding: 8px 16px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer; 
-    border-radius: 6px;
-    transition: background 0.3s;
-}
-
-#btn-dark:hover {
-    background: #4d4d4d;
-}
-
-body.dark #btn-dark:hover {
-    background: #1ca955;
-}
-
-
-
-
     .container{
       max-width: var(--max-width);
       margin: 30px auto;
@@ -126,24 +105,24 @@ body.dark #btn-dark:hover {
     .hero-text h1{
       font-family: 'Maleha', Georgia, serif;
       font-size: clamp(2rem, 4.5vw, 3.2rem);
-      color: var(--verde-oscuro);
       margin:0 0 10px 0;
       line-height:1.05;
     }
 
     .hero-text p.lead{
       font-size:1.05rem;
-      color:#2f4f35;
+      color: #2f4f35;
       margin:0 0 16px;
     }
 
-    .hero-card{
-      background: linear-gradient(180deg, rgba(255,244,163,0.9), rgba(224,241,233,0.9));
-      border-radius: 12px;
-      padding:18px;
-      box-shadow: 0 6px 18px rgba(72,129,58,0.08);
-      border: 1px solid rgba(72,129,58,0.08);
-    }
+    .hero-card {
+  background: linear-gradient(180deg, rgba(255,244,163,0.9), rgba(224,241,233,0.9));
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 6px 18px rgba(72,129,58,0.08);
+  border: 1px solid rgba(72,129,58,0.08);
+  color: #2f4f35;
+}
 
     .grid-2{
       display:grid;
@@ -158,13 +137,13 @@ body.dark #btn-dark:hover {
       font-size:1.6rem;
     }
 
-    .texto{
-      background: white;
-      padding:16px;
-      border-radius:8px;
-      border: 1px solid rgba(34,51,34,0.06);
-      box-shadow: 0 6px 20px rgba(9,9,9,0.02);
-    }
+    .texto {
+  background: white;
+  padding: 16px;
+  border-radius: 10px;
+  border-left: 6px solid var(--verde-4);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+}
 
     .valores{
       display:flex;
@@ -212,7 +191,9 @@ body.dark #btn-dark:hover {
       box-shadow: 0 6px 18px rgba(72,129,58,0.18);
       transition: transform .12s ease, box-shadow .12s ease;
     }
-    .btn:hover{ transform: translateY(-3px); box-shadow: 0 14px 36px rgba(72,129,58,0.18); }
+    .btn:hover{ 
+      transform: translateY(-3px); 
+      box-shadow: 0 14px 36px rgba(72,129,58,0.18); }
 
     .equipo{
       display:grid;
@@ -299,6 +280,97 @@ body.dark .footer-copy {
 
 body.dark .footer-redes .icono img {
     filter: brightness(0.85);
+}
+
+
+
+/* btn oscuro */
+#btn-dark {
+    margin-left: 250%;
+    padding: 8px 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer; 
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+#btn-dark:hover {
+    background: #4d4d4d;
+}
+
+body.dark #btn-dark:hover {
+    background: #1ca955;
+}
+
+/* modo oscuro */
+
+body.dark {
+    background: #1c1c1c;
+    color: #ffffff;
+}
+
+body.dark header {
+    background: #2a2a2a;
+}
+
+body.dark .hero-card {
+  background: linear-gradient(180deg, rgba(40, 60, 40, 0.95), rgba(20, 30, 22, 0.95));
+  border-color: rgba(200, 230, 200, 0.25);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+}
+
+body.dark .hero-text h1 {
+  color: #76d175;
+}
+
+body.dark .hero-text p.lead {
+  color: #ffffff;
+}
+
+body.dark .texto {
+  background: #151c16;
+  color: #f0f0f0;
+  border-color: rgba(200, 230, 200, 0.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+body.dark h2.section-title {
+  color: #76d175;
+}
+
+body.dark .chip {
+  background: #264b33;
+  color: #ffffff;
+  border-color: rgba(200, 230, 200, 0.2);
+}
+
+body.dark .miembro {
+  background: #151c16;
+  border-color: rgba(0, 243, 0, 0.15);
+}
+
+body.dark .miembro h4 {
+  color: #ffffff;
+}
+
+body.dark .miembro p {
+  color: #ffffff;
+}
+
+body.dark .mapa-wrap {
+  border-color: rgba(200, 230, 200, 0.25);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+}
+
+body.dark .btn {
+  background: #00a859;
+  box-shadow: 0 6px 18px rgba(0, 168, 89, 0.4);
+}
+
+body.dark .btn:hover {
+  box-shadow: 0 14px 36px rgba(0, 168, 89, 0.5);
 }
 
     @media (max-width:880px){
